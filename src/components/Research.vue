@@ -27,21 +27,20 @@
 
 <style scoped>
 section {
-  background: linear-gradient(to right, #dacbaa, #fcedcc, #dacbaa);
+  --bg: #fcedcc;
+  --bg-dark: #dacbaa;
   display: grid;
   place-content: center;
   padding: 1rem 1rem 2rem;
+
+  @media screen and (max-width: 40rem) {
+    --bg-dark: #ebdcbb;
+  }
 }
 
-h2 {
-  font-size: 2em;
-  font-weight: 200;
-  opacity: 0.5;
-}
-
-p, dl {
-  width: 60ch;
+dl {
   font-weight: 300;
+  max-width: var(--text-width);
 }
 
 dd {
@@ -53,5 +52,3 @@ dt {
   font-weight: 400;
 }
 </style>
-<script setup lang="ts">
-</script>

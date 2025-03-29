@@ -3,7 +3,7 @@
     <div>
       <h2>Rólunk</h2>
       <p>
-        A Tézis Kutatóközpont a GazMag Tudományos és Ismeretterjesztő Egyesület által fenntartott önálló kutatási
+        A Tézis Kutatóközpont a <a href="https://gazmag.hu" target="_blank">GazMag Tudományos és Ismeretterjesztő Egyesület</a> által fenntartott önálló kutatási
         egység, multidiszciplináris kutatóhely. Jelenleg főleg a társadalomtudományok területén végez kutatásokat.
         A Kutatóközpont a közgazdaságtudományi és helytörténeti oktatás, kutatás, innováció minden oldalát erősíteni,
         fejleszteni kívánja.
@@ -20,21 +20,23 @@
 
 <style scoped>
 section {
-  background: linear-gradient(to right, #755c30, #977e50, #755c30);
+  --bg: #977e50;
+  --bg-dark: #755c30;
   color: #fff;
   display: grid;
   place-content: center;
   padding: 1rem 1rem 2rem;
-}
 
-h2 {
-  font-size: 2em;
-  font-weight: 200;
-  opacity: 0.5;
-}
+  a {
+    color: currentColor;
+    text-decoration: underline;
+    text-decoration-color: #fff7;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+  }
 
-p {
-  width: 60ch;
-  font-weight: 300;
+  @media screen and (max-width: 40rem) {
+    --bg-dark: #866d40;
+  }
 }
 </style>

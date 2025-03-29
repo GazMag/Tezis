@@ -39,7 +39,7 @@ header {
   background: #06a7;
   display: grid;
   place-content: center;
-  height: 100vh;
+  height: 75vh;
   position: relative;
   z-index: 0;
 
@@ -75,7 +75,7 @@ footer {
   padding: 1rem;
 
   a {
-    color: #06a;
+    color: var(--secondary);
     display: inline-block;
     font-weight: 300;
     padding: 0.5em;
@@ -90,6 +90,10 @@ footer {
   small {
     font-weight: 200;
     opacity: 0.75;
+  }
+
+  @media screen and (max-width: 40rem) {
+    flex-direction: column;
   }
 }
 </style>
