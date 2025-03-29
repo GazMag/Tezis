@@ -40,6 +40,7 @@ header {
   display: grid;
   place-content: center;
   height: 75vh;
+  padding: 1rem;
   position: relative;
   z-index: 0;
 
