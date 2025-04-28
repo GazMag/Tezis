@@ -7,3 +7,5 @@ import './assets/main.css';
 const app = createApp(App);
 setupMatomo(app);
 app.mount('#app');
+
+window._paq.push(['trackPageView']);
