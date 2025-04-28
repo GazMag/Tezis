@@ -1,6 +1,9 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import { setupMatomo } from './plugins/matomo';
+import App from './App.vue';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import './assets/main.css';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+setupMatomo(app);
+app.mount('#app');
