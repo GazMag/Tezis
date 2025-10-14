@@ -1,11 +1,22 @@
-import { createApp } from 'vue';
-import { setupMatomo } from './plugins/matomo';
-import App from './App.vue';
+/**
+ * main.js
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
 
-import './assets/main.css';
+import { createApp } from 'vue'
+import { registerPlugins } from '@/plugins'
 
-const app = createApp(App);
-setupMatomo(app);
-app.mount('#app');
+// Components
+import App from './App.vue'
 
-window._paq.push(['trackPageView']);
+// Styles
+import 'unfonts.css'
+
+const app = createApp(App)
+
+registerPlugins(app)
+
+app.mount('#app')
+
+window._paq.push(['trackPageView'])
